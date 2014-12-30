@@ -1,0 +1,74 @@
+.asterisk:before {
+  content: "*";
+}
+.dash:after {
+  content: " - ";
+}
+.spacebar:after {
+  content: " ";
+}
+.prespace:before {
+  content: " ";
+}
+.predash:before {
+  content: " - ";
+}
+.pound:after {
+  content: '#';
+}
+.ellipsis {
+  text-overflow: ellipsis;
+}
+.parantheses:after {
+  content: ") ";
+}
+.parantheses:before {
+  content: " (";
+}
+.italic {
+  font-style: italic;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.upcase {
+  text-transform: uppercase;
+}
+.align-right {
+  text-align: right;
+}
+.align-center {
+  text-align: center;
+}
+.align-left {
+  text-align: left;
+}
+.bold {
+  font-weight: bold;
+}
+.colon:after {
+  content: ":";
+}
+.ellipsis:after {
+  content: "...";
+}
+.hidden {
+  display: none;
+}
+.comma:not(:last-child) {
+  &:after {
+    content: ",";
+  }
+}
+.pointer {
+  cursor: pointer;
+}
+.opaque {
+  @include opacity(1);
+}
+.translucent {
+  @include opacity(0.7);
+}
+.transparent {
+  @include opacity(0);
+}

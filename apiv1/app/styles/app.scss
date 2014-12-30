@@ -1,0 +1,12 @@
+@import "framework";
+@import "header";
+@import "footer";
+@import "templates/index";
+@import "components/regional-map";
+@import "modal";
+
+html, body {
+  background: #333;
+  width: 100%;
+  overflow-x: hidden;
+}

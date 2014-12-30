@@ -1,0 +1,18 @@
+#application-header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  .navbar-logo {
+    font-size: 2rem;
+  }
+  .navbar {
+    margin-bottom: 0;
+  }
+  .navbar-inverse {
+    background: {
+      color: fade-out(#222, 0.9);
+    }
+    border: 1px solid fade-out(#222, 0.9);
+  }
+}

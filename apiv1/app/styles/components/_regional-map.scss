@@ -1,0 +1,13 @@
+.regional-map {
+  width: 100%;
+  min-height: 800px;
+  .marker-container {
+    @include display-flex;
+    @include flex-direction(column);
+    @include align-items(center);
+  }
+  .media-title {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+}

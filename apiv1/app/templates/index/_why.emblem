@@ -1,0 +1,8 @@
+.row
+  .col-xs-12
+    h2.section-title Why?
+    .explanation= currentReason
+  .col-xs-12
+    .take-the-challenge
+      button.ghost-btn click="displayModal 'challenge'"
+        span accept the challenge

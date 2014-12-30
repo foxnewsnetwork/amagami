@@ -1,0 +1,222 @@
+#templates-index {
+  .toggle-version {
+    cursor: pointer;
+    color: #ccc;
+    font-size: 6rem;
+    width: 100%;
+    display: block;
+    @include opacity(0);
+    @include transition-property(opacity);
+    @include transition-duration(200ms);
+    @include transition-timing-function(ease-in);
+    &:hover {
+      @include opacity(1);
+    }
+  }
+}
+@import url(http://fonts.googleapis.com/css?family=Happy+Monkey);
+#hero {
+  .hero-splash::before {
+    background: {
+      image: url("images/amagami.jpg");
+      repeat: no-repeat;
+      size: cover;
+    }
+    @include filter(brightness(25%) grayscale(0.25));
+    @include opacity(0.9);
+    min-height: 975px;
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    content: " ";
+  }
+  .hero-splash {
+    color: #ccc;
+    min-height: 975px;
+    position: relative;
+    @include display-flex;
+    @include flex-direction(column);
+    @include justify-content(center);
+    font-family: 'Happy Monkey', cursive;
+  }
+  .site-title {
+    text-align: center;
+    font-size: 6rem;
+  }
+  .site-version {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .section-title {
+    text-transform: capitalize;
+    font-size: 4rem;
+    color: #ccc;
+    .fa-caret-down {
+      @include opacity(0);
+      @include transition-property(opacity);
+      @include transition-duration(200ms);
+      @include transition-timing-function(ease-in);
+    }
+    &:hover {
+      .fa-caret-down {
+        @include opacity(1);
+      } 
+    }
+  }
+}
+
+@import url(http://fonts.googleapis.com/css?family=Muli);
+#goal {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  background: {
+    color: #eee;
+  }
+  font-family: 'Muli', sans-serif;
+  .section-title {
+    font-size: 3rem;
+  }
+  .goal {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .toggle-version { 
+    display: inline;
+    font-size: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .goal-pic {
+    margin-top: 8rem;
+    @include box-shadow(fade-out(#000, 0.4) 0px 0px 8px);
+  }
+  .goals {
+    padding-left: 20px;  
+  }
+}
+
+#penalty {
+  font-family: 'Muli', sans-serif;
+  color: #eee;
+  .penalty-box,
+  .regional-map {
+    min-height: 650px;
+  }
+  .penalty-box {
+    @include display-flex;
+    @include justify-content(center);
+    @include flex-direction(column);
+  }
+  .section-title {
+    font-size: 3rem;
+  }
+  .bench-pic {
+    width: 100px;
+    height: 90px;
+    margin-right: 15px;
+    @include box-shadow(fade-out(#fff, 0.4) 0px 0px 8px);
+  }
+  .pics {
+    text-align: justify;
+  }
+}
+
+#why {
+  &::before {
+    background: {
+      image: url("images/words2.png");
+      repeat: no-repeat;
+      position: center center;
+      size: cover;
+    }
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    min-height: 650px;
+    content: " ";
+    @include filter(brightness(0.55) saturate(0.35));
+    @include opacity(0.9);
+  }
+  position: relative;
+  font-family: 'Muli', sans-serif;
+  background: #222;
+  min-height: 650px;
+  color: #eee;
+  @include display-flex;
+  @include justify-content(center);
+  @include flex-direction(column);
+  .section-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .explanation {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .take-the-challenge {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .ghost-btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 4px solid #5cb85c;
+    height: 48px;
+    line-height: 48px;
+    color: #5cb85c;
+    -webkit-border-radius: 5px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 5px;
+    -moz-background-clip: padding;
+    border-radius: 5px;
+    background-clip: padding-box;
+    font-size: 2em;
+    font-weight: bold;
+    padding: .5em 1.5em;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    background: fade-out(#fff, 1);
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    zoom: 1;
+    -webkit-backface-visibility: hidden;
+    position: relative;
+  }
+  .ghost-btn:hover {
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    background-color: #5cb85c;
+    color: #ffffff;
+  }
+  .ghost-btn:focus {
+    outline: none;
+  }
+}
+
+#conditions-and-resources {
+  color: #eee;
+  font-family: 'Muli', sans-serif;
+  padding-bottom: 5rem;
+  .section-title {
+    margin-top: 10rem;
+    text-transform: capitalize;
+  }
+  .conditions {
+    padding-left: 20px;
+  }
+  .condition {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .type-title {
+    margin-top: 20px;
+  }
+}

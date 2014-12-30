@@ -1,0 +1,19 @@
+.container
+  .row
+    .col-xs-12.col-sm-10.col-md-8.col-lg-6.modal-background.col-sm-offset-1.col-md-offset-2.col-lg-offset-3
+      .action-cancel.pointer click="closeModal"
+        i.fa.fa-times
+      h2.modal-title Challenge Accepted! 
+      h3.question But first, are you a...
+      .action
+        button.btn.btn-lg.boy
+          i.fa.fa-male
+          span.prespace boy
+      .in-between
+        span.dash -
+        span.capitalize or
+        span.predash -
+      .action
+        button.btn.btn-lg.girl
+          i.fa.fa-female
+          span.prespace girl

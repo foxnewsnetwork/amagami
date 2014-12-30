@@ -1,0 +1,48 @@
+.row
+  .col-lg-12
+    .row
+      .col-xs-1.col-sm-2.col-md-2.col-lg-2
+        a.toggle-version.align-right click="toggleVersion 'left'"
+          i.fa.fa-caret-left
+
+      .col-xs-10.col-sm-8.col-md-8.col-lg-8
+        h1.site-title
+          span Amagami Challenge
+      
+      .col-xs-1.col-sm-2.col-md-2.col-lg-2      
+        a.toggle-version.align-left click="toggleVersion 'right'"
+          i.fa.fa-caret-right
+
+    h4.site-version
+      span.spacebar= v
+      span v. 2015
+.row
+  .col-lg-12
+    link-to "index" (query-params s="goal") class="section-title"
+      span.spacebar The Goal
+      i.fa.fa-caret-down
+    p.section-explanation Find a girlfriend by 12/24/2015
+.row
+  .col-lg-12
+    link-to "index" (query-params s="penalty") class="section-title"
+      span.spacebar The Penalty
+      i.fa.fa-caret-down
+    p.section-explanation Sit on a park bench and cry
+.row
+  .col-lg-12
+    link-to "index" (query-params s="why") class="section-title"
+      span.spacebar why take the challenge?
+      i.fa.fa-caret-down
+    p.section-explanation You might ask yourself: "why?"... blah blah blah
+.row
+  .col-lg-12
+    link-to "index" (query-params s="conditions") class="section-title"
+      span.spacebar conditions
+      i.fa.fa-caret-down
+    p.section-explanation if you break up, you must tfwnogf
+.row
+  .col-lg-12
+    link-to "index" (query-params s="resources") class="section-title"
+      span.spacebar resources
+      i.fa.fa-caret-down
+    p.section-explanation reading

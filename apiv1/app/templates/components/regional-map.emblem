@@ -1,0 +1,3 @@
+.hidden
+  each listing in listings
+    regional-marker cluster=clusterGroup listing=listing

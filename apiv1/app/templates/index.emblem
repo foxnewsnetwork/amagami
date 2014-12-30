@@ -1,0 +1,44 @@
+#templates-index
+  #hero
+    .hero-splash
+      .container
+        == partial "index/hero"
+
+  #goal
+    .container
+      == partial "index/goal"
+
+  #penalty
+    .fluid-container
+      == partial "index/penalty"
+
+  #why
+    .container
+      == partial "index/why"
+
+  #conditions-and-resources
+    .container
+      .row
+        .col-xs-12.col-sm-12.col-md-6.col-lg-6
+          h2.section-title conditions
+          ul.conditions
+            li.condition if you break up, you must get together with someone else before 12/24/2015
+            li.condition regular updates (to your favorite website or even your own diary) are encouraged
+            li.condition if you stand her up or break up on your Christmas Eve, you unlock the bad end (don't do it)
+            li.condition take time to physically meet the other person instead of just sending texts back and forth; people are so much more than the serialization of their words and pictures on white-and-blue web app
+            li.condition judge a person by what you yourself see and feel, not by the words, pictures, and records of (or lack thereof) him or her on the internet
+        .col-xs-12.col-sm-12.col-md-6.col-lg-6
+          h2.section-title resources
+          dl.resources
+            dt.type-title reading
+            dd.resource
+              span.bold.dash
+                a href="http://guide.wellcultured.com"
+                  span wellcultured.com
+              span.explanation a good guide to fashion and basic social skills
+            dd.resource
+              span.bold.dash
+                a href="http://dis.4chan.org/read/anime/1284187017"
+                  span 4chan.org/archives
+              span.explanation the original 4chan thread that began the Amagami Challenge
+            

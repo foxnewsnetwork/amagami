@@ -1,0 +1,81 @@
+#application-modal {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 3000;
+  font-family: 'Happy Monkey', cursive;
+  background: {
+    color: fade-out(#000, 0.8);
+  }
+  .action,
+  .in-between {
+    text-align: center;
+  }
+  .action-cancel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+    border: 2px solid #d9534f;
+    padding: 10px 15px;
+    color: #fff;
+    background: {
+      color: #d9534f;
+    }
+    @include border-radius(5px);
+  }
+  .boy {
+    border: 3px solid #337ab7;
+    &:hover {
+      background-color: #337ab7;
+      color: #eee;
+    }
+  }
+  .girl {
+    border: 3px solid darken(#f2dede, 15%);
+    &:hover {
+      background-color: darken(#f2dede, 15%);
+      color: #fff;
+    }
+  }
+  .btn {
+    background-color: fade-out(#fff, 1);
+    font-size: 2rem;
+    @include transition-property(background-color);
+    @include transition-duration(200ms);
+    @include transition-timing-function(ease-in);
+  }
+  .in-between {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 2rem;
+  }
+}
+
+.modal-background {
+  @include border-radius(5px);
+  border: 2px solid #555;
+  background: {
+    color: #eee;
+  }
+  padding: 2rem;
+}
+
+.modal-vertical-container {
+  height: 100%;
+  width: 100%;
+  @include display-flex;
+  @include flex-direction(column);
+  @include justify-content(center);
+}
+
+.modal-horizontal-container {
+  height: 100%;
+  width: 100%;
+  @include display-flex;
+  @include flex-direction(row);
+  @include justify-content(center);
+}

@@ -1,0 +1,85 @@
+.row
+  .col-xs-12.col-sm-12.col-md-6.col-lg-6
+    h2.section-title.pointer click="toggleVersion 'right'"
+      span.spacebar Goal Details
+      unless isVanilla
+        span.spacebar -
+        span.capitalize= v
+    ul.goals
+      li.goal 
+        .goal-title be in a relationship by 12/24/2015
+        .goal-small the relationship must be mutual, both of you must consent
+      li.goal
+        .goal-title tell her "I love you" on 12/24/2015
+        .goal-small you must mean it. It's okay to do it before then.
+      li.goal
+        .goal-title have her say to you "I love you" by 12/24/2015
+        .goal-small she must also mean it. It's also okay if she says it earlier
+      if isHaruka
+        li.goal
+          .goal-title 
+            span.bold.colon glamour
+            span.prespace do all of the above in a hotel room
+          .goal-small preferrably a fancy hotel with a good view
+        li.goal
+          .goal-title 
+            span.bold.colon bonus
+            span.prespace peek on her if she showers at the hotel room
+          .goal-small not necessary, but do it for fun
+      if isTsukasa
+        li.goal
+          .goal-title 
+            span.bold.colon cooperation
+            span.prespace work on an extended project with her
+          .goal-small preferrably something both engaging and meaningful to both of you
+        li.goal
+          .goal-title 
+            span.bold.colon bonus
+            span.prespace finish and present by 12/24/2015
+          .goal-small not necessary, but a deadline helps with getting things done
+      if isKaoru
+        li.goal
+          .goal-title 
+            span.bold.colon truth
+            span.prespace open up to her and have her open up to you
+          .goal-small be honest with yourself and with each other even about the ugly parts of your character
+        li.goal
+          .goal-title 
+            span.bold.colon bonus
+            span.prespace go on an open-air ride or walk together
+          .goal-small preferrably along a river or a beach
+      if isRihoko
+        li.goal
+          .goal-title 
+            span.bold.colon tradition
+            span.prespace take her to your family home
+          .goal-small enjoy a familial Christmas Eve with her and your family
+        li.goal
+          .goal-title 
+            span.bold.colon bonus
+            span.prespace have your family (especially sisters and mom) like her
+          .goal-small or at least not dislike her
+      if isAi
+        li.goal
+          .goal-title 
+            span.bold.colon exhilaration
+            span.prespace go skinny dipping with her
+          .goal-small substitute for jaccuzi or bathtub if heated pools are unavailable
+        li.goal
+          .goal-title 
+            span.bold.colon bonus
+            span.prespace go to an open-air hot spring
+          .goal-small look at the stars with her together (try not to get caught)
+      if isSae
+        li.goal
+          .goal-title 
+            span.bold.colon fluff
+            span.prespace dress up with her
+          .goal-small make sure your fashions compliment each other
+        li.goal
+          .goal-title 
+            span.bold.colon bonus
+            span.prespace take tons of pictures and videos
+          .goal-small share them publicly
+  .col-xs-12.col-sm-12.col-md-6.col-lg-6
+    img.img-thumbnail.goal-pic src=goalPic
