@@ -6,7 +6,7 @@
       h2.modal-title Challenge Accepted! 
       h3.question But first, are you a...
       .action
-        button.btn.btn-lg.boy
+        link-to "challengers.new" (query-params s="m") class="btn btn-lg boy"
           i.fa.fa-male
           span.prespace boy
       .in-between
@@ -14,6 +14,6 @@
         span.capitalize or
         span.predash -
       .action
-        button.btn.btn-lg.girl
+        link-to "challengers.new" (query-params s="f") class="btn btn-lg girl"
           i.fa.fa-female
           span.prespace girl

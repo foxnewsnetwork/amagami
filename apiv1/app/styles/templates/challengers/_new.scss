@@ -1,0 +1,90 @@
+#templates-challengers-new {
+  margin-top: 10rem;
+  color: #eee;
+  font-family: 'Muli', sans-serif;
+  .form-title {
+    font-family: 'Happy Monkey', cursive;
+    font-size: 2.25rem;
+    color: #eee;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+  }
+  .paper {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px dotted #ccc;
+    min-width: 100%;
+    display: block;
+    padding-left: 15px;
+    font-size: 16px;
+  }
+  .input-section {
+    margin-top: 2rem;
+    padding-top: 1rem;
+  }
+  .character-pic {
+    width: 150px;
+  }
+  .explanation {
+    color: #eee;
+  }
+  .girl-specifics-section,
+  .location-specifics-section,
+  .actions-section {
+    margin-top: 45px;
+  }
+  .section-explanation {
+    margin-top: 50px;
+  }
+  .regional-map {
+    min-height: 250px;
+    border: 2px solid #eee;
+    @include box-shadow(#fff 0px 0px 5px);
+    @include border-radius(5px);
+  }
+  .pushed-down {
+    padding-top: 15px;
+  }
+  .ghost-btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 4px solid #5cb85c;
+    height: 48px;
+    line-height: 48px;
+    color: #5cb85c;
+    -webkit-border-radius: 5px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 5px;
+    -moz-background-clip: padding;
+    border-radius: 5px;
+    background-clip: padding-box;
+    font-size: 2em;
+    font-weight: bold;
+    padding: .5em 1.5em;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    background: fade-out(#fff, 1);
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    zoom: 1;
+    -webkit-backface-visibility: hidden;
+    position: relative;
+  }
+  .ghost-btn:hover {
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    background-color: #5cb85c;
+    color: #ffffff;
+  }
+  .ghost-btn:focus {
+    outline: none;
+  }
+}

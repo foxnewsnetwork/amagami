@@ -1,12 +1,21 @@
 @import "framework";
 @import "header";
 @import "footer";
-@import "templates/index";
+@import "template";
 @import "components/regional-map";
+@import "components/promise-button";
 @import "modal";
 
 html, body {
   background: #333;
   width: 100%;
   overflow-x: hidden;
+}
+
+#application-body {
+  @include display-flex;
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  min-height: 950px;
+  width: 100%;
 }

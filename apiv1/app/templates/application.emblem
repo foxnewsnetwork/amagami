@@ -10,19 +10,20 @@
             a.pointer click="displayModal 'challenge'"
               span.navlink take the challenge
 
-#application-container
-  == outlet
+#application-body
+  #application-container
+    == outlet
 
-#application-footer
-  footer.site-footer
-    .container
-      .row
-        .col-xs-12
-          h4.footer-title 
-            span.spacebar Amagami Challenge Organization
-            span | 
-            a.github-link href="https://github.com/foxnewsnetwork/amagami"
-              span.capitalize github
+  #application-footer
+    footer.site-footer
+      .container
+        .row
+          .col-xs-12
+            h4.footer-title 
+              span.spacebar Amagami Challenge Organization
+              span | 
+              a.github-link href="https://github.com/foxnewsnetwork/amagami"
+                span.capitalize github
 
 #application-modal
   .modal-vertical-container
