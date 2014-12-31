@@ -1,14 +1,5 @@
 #application-header
-  nav.navbar.navbar-inverse
-    .container-fluid
-      .navbar-header
-        link-to "index" class="navbar-brand" 
-          span.navbar-logo Amagami Challenge
-      .collapse.navbar-collapse
-        ul.nav.navbar-nav.navbar-right
-          li
-            link-to "challengers.new"
-              span.navlink take the challenge
+  site-nav
 
 #application-body
   #application-container

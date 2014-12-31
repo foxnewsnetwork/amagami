@@ -5,6 +5,7 @@
   z-index: 1;
   .navbar-logo {
     font-size: 2rem;
+    font-weight: bold;
   }
   .navbar {
     margin-bottom: 0;
@@ -14,5 +15,14 @@
       color: fade-out(#222, 0.9);
     }
     border: 1px solid fade-out(#222, 0.9);
+    @include transition-property(background-color);
+    @include transition-duration(200ms);
+    @include transition-timing-function(ease-in);
+  }
+  .sticky-naved {
+    background-color: #eee;
+    color: #333;
+    border-bottom: 1px solid fade-out(#222, 0.9);
+    @include box-shadow(fade-out(#000, 0.4) 0px 5px 8px);
   }
 }

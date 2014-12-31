@@ -32,7 +32,7 @@
         .col-xs-12.col-sm-12.col-md-6.col-lg-6
           h2.section-title resources
           dl.resources
-            dt.type-title reading
+            dt.type-title guides
             dd.resource
               span.bold.dash
                 a href="http://guide.wellcultured.com"
@@ -43,4 +43,22 @@
                 a href="http://dis.4chan.org/read/anime/1284187017"
                   span 4chan.org/archives
               span.explanation the original 4chan thread that began the Amagami Challenge
+
+            dt.type-title places to overcome
+            dd.resource
+              span.bold.dash
+                a href="http://boards.4chan.org/a/"
+                  span 4chan
+              span.explanation a place where males get together to propound cynical theories on women, society, and other things
+            dd.resource
+              span.bold.dash
+                a href="https://www.tumblr.com/search/haes"
+                  span tumblr 
+              span.explanation a place where females get together to propound cynical theories on men, society, and other things
             
+            dt.type-title reading
+            dd.resource
+              span.bold.dash
+                a href="http://www.amazon.com/Born-Be-Good-Science-Meaningful/dp/0393337138/ref=sr_1_1?ie=UTF8&qid=1420045137&sr=8-1&keywords=born+to+be+good"
+                  span Dacher Keltner's Born to be Good
+              span.explanation a book on the goodness and wisdom of human nature

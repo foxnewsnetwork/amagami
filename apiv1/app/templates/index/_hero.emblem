@@ -27,22 +27,23 @@
     link-to "index" (query-params s="penalty") class="section-title"
       span.spacebar The Penalty
       i.fa.fa-caret-down
-    p.section-explanation Sit on a park bench and cry
+    p.section-explanation Sit on a local park bench and weep bitterly
 .row
   .col-lg-12
     link-to "index" (query-params s="why") class="section-title"
       span.spacebar why take the challenge?
       i.fa.fa-caret-down
-    p.section-explanation You might ask yourself: "why?"... blah blah blah
+    p.section-explanation You might ask yourself: "Why? Why should I risk real life interaction and involvement with another human in 2015 - an age of divource, the internet, and busy career life?" 
+    p.section-explanation The simple answer: meaning and happiness exist in intimate relationships, not on internet message boards or the corporate ladder.
 .row
   .col-lg-12
-    link-to "index" (query-params s="conditions") class="section-title"
+    link-to "index" (query-params s="conditions-and-resources") class="section-title"
       span.spacebar conditions
       i.fa.fa-caret-down
-    p.section-explanation if you break up, you must tfwnogf
+    p.section-explanation if you break up before Christmas Eve, you can try again as soon as you're ready. If you break up on Christmas Eve, you are done for good.
 .row
   .col-lg-12
-    link-to "index" (query-params s="resources") class="section-title"
+    link-to "index" (query-params s="conditions-and-resources") class="section-title"
       span.spacebar resources
       i.fa.fa-caret-down
-    p.section-explanation reading
+    p.section-explanation see suggested readings, support groups, and places to avoid

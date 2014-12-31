@@ -5,6 +5,10 @@ ctd = ->
   ff = Ember.computed(fun)
   ff.property.apply ff, deps
 
+observed = ->
+  [fields..., fun] = arguments
+  fun.observes.apply fun, fields
+
 IndexController = Ember.Controller.extend
   queryParams: ['s', 'v']
   versions: ['kaoru', 'tsukasa', 'rihoko', 'ai', 'sae', 'haruka']
@@ -17,6 +21,21 @@ IndexController = Ember.Controller.extend
     "learn to love, understand, and get close to another real person.",
     "rediscover an ancient meaning to life more intimately human than money, fame, or peer approval."
   ]
+
+  scroll2Anchor: observed "s", ->
+    return @smoothScrollTo 0 unless _.contains ["hero", "goal", "penalty", "why", "conditions-and-resources"], @get "s"
+    Ember.run.schedule 'afterRender', @, =>
+      el$ = $('#' + @get "s")
+      @smoothScrollTo @topOffset el$ if el$.length > 0
+
+  smoothScrollTo: (y) ->
+    $("body").animate scrollTop: y if y?
+
+  topOffset: (el$) ->
+    p1 = el$.position()
+    return unless p1?
+    p1.top
+
   presentVersionIndex: ctd "v", ->
     ind = @get("v")
     @versions.indexOf ind
