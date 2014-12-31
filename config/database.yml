@@ -51,4 +51,4 @@ production:
   <<: *default
   database: amagami_production
   username: amagami
-  password: <%= ENV['AMAGAMI_DATABASE_PASSWORD'] %>
+  password: <%= ENV['APIV1_DATABASE_PASSWORD'] %>
