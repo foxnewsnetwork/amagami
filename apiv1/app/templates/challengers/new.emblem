@@ -2,16 +2,39 @@
   form-for errors=failureReason submit="formSubmitted"
     .container
       .row
-        .col-xs-12.col-sm-12.col-md-10.col-lg-10
-          h2
-            span.form-title tell me about yourself
+        .col-xs-12.col-sm-12.col-md-6.col-lg-4
+          h2.form-title
+            span tell me about yourself
+
       .row
         .col-xs-12.col-sm-12.col-md-6.col-lg-4
-          .form-group.input-section attr-name="character"
+          .form-group.sex-question
             label.form-label
-              span.capitalize.white which Amagami do you love most?
-              == view "select" content=characters value=model.character class="form-control" prompt="Pick your poison"
-          .explanation if enough people register their challenge, this site can help match you with your amagami
+              span.capitalize.white are you a...
+          .sex-section
+            .action
+              link-to "challengers.new" (query-params s="boy") class="btn btn-lg boy"
+                i.fa.fa-male
+                span.prespace boy
+            .in-between
+              span.dash -
+              span.capitalize or
+              span.predash -
+            .action
+              link-to "challengers.new" (query-params s="girl") class="btn btn-lg girl"
+                i.fa.fa-female
+                span.prespace girl
+      .row
+        .col-xs-12.col-sm-12.col-md-6.col-lg-4
+          if model.sex
+            .form-group.input-section attr-name="character"
+              label.form-label
+                if isMale
+                  span.capitalize.white which Amagami archetype can you waifu?
+                if isGirl
+                  span.capitalize.white which Amagami archetype are you?
+                == view "select" content=characters value=model.character class="form-control" prompt="Pick your poison"
+            .explanation if enough people register their challenge, this site can help match you with your amagami
         .col-xs-12.col-sm-12.col-md-6.col-lg-8
           if characterPic
             .media
@@ -68,7 +91,7 @@
               input.paper value=model.genres type="text" placeholder="Painstaking erotica, dull romance"
       if model.character
         .row
-          .col-xs-12.col-sm-12.col-md-6.col-lg-6.location-specifics-section
+          .col-xs-12.col-sm-12.col-md-6.col-lg-4.location-specifics-section
             h2: span.form-title how do we contact you?
             .form-group.input-section attr-name="email"
               label.form-label
@@ -80,7 +103,7 @@
                 span.capitalize.white address
                 span.parantheses.white so we match you with people you can conveniently meet in real life
               input.paper value=model.address type="text" placeholder="Santa Monica, California"
-          .col-xs-12.col-sm-12.col-md-6.col-lg-6.location-specifics-section
+          .col-xs-12.col-sm-12.col-md-6.col-lg-8.location-specifics-section
             h4.section-explanation *marking where you are on the map isn't implemented yet
             regional-map zoom=14
         .row

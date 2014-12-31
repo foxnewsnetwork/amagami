@@ -11,6 +11,9 @@
     margin-bottom: 1rem;
     border-bottom: 1px solid #ccc;
   }
+  .media {
+    margin-top: 30px;
+  }
   .paper {
     background-color: transparent;
     border: none;
@@ -86,5 +89,62 @@
   }
   .ghost-btn:focus {
     outline: none;
+  }
+
+}
+
+.sex-question {
+  margin-top: 25px;
+}
+.sex-section {
+  @include display-flex;
+  @include flex-direction(row);
+  @include justify-content(space-between);
+  .action,
+  .in-between {
+    text-align: center;
+  }
+  .action-cancel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+    border: 2px solid #d9534f;
+    padding: 10px 15px;
+    color: #fff;
+    background: {
+      color: #d9534f;
+    }
+    @include border-radius(5px);
+  }
+  .boy {
+    border: 3px solid #337ab7;
+    color: #fff;
+    &:hover,
+    &.active {
+      background-color: #337ab7;
+      color: #eee;
+    }
+  }
+  .girl {
+    border: 3px solid darken(#f2dede, 15%);
+    color: #fff;
+    &:hover,
+    &.active {
+      background-color: darken(#f2dede, 15%);
+      color: #fff;
+    }
+  }
+  .btn {
+    background-color: fade-out(#fff, 1);
+    font-size: 2rem;
+    @include transition-property(background-color);
+    @include transition-duration(200ms);
+    @include transition-timing-function(ease-in);
+  }
+  .in-between {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 2rem;
   }
 }

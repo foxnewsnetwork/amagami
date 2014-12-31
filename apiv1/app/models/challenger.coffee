@@ -57,12 +57,10 @@ Challenger = DS.Model.extend
   comments: DS.attr "string"
   roots: DS.attr "string"
   hobbies: DS.attr "string"
-  comments: DS.attr "string"
   projects: DS.attr "string"
   skills: DS.attr "string"
   books: DS.attr "string"
   genres: DS.attr "string"
-  character: DS.attr "string"
   email: DS.attr "string"
   address: DS.attr "string"
 
