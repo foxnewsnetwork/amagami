@@ -63,6 +63,7 @@ Challenger = DS.Model.extend
   genres: DS.attr "string"
   email: DS.attr "string"
   address: DS.attr "string"
+  sex: DS.attr "string"
 
   characterTagline: computed "character", ->
     return if Ember.isBlank @get "character"

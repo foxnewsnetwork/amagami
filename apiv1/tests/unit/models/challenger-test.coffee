@@ -9,3 +9,8 @@ test 'it exists', ->
   model = @subject()
   # store = @store()
   ok !!model
+
+text 'creation', ->
+  store = @store()
+  c = store.createRecord "challenger"
+  c.save().then (c) -> ok c
