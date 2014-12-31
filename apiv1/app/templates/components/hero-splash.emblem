@@ -1,0 +1,14 @@
+.hidden-md.hidden-lg
+  .splash-girls
+    .rihoko
+    .tsukasa
+    .sae
+    .kaoru
+    .haruka
+    .ai
+  .minor-splash
+    == yield
+
+.hidden-xs.hidden-sm
+  .major-splash
+    == yield

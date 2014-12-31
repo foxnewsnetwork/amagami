@@ -9,6 +9,6 @@
           .pics
             img.bench-pic.img-circle src="assets/images/bench.jpg"
             img.bench-pic.img-circle src="assets/images/tfwnogf.png"
-  .col-xs-12.col-sm-12.col-md-6.col-lg-6.col-md-pull-6.col-lg-pull-6
+  .col-xs-12.col-sm-12.col-md-6.col-lg-6.col-md-pull-6.col-lg-pull-6.hidden-xs.hidden-sm
     .park-map
       regional-map zoom=15

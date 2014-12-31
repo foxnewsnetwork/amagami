@@ -7,7 +7,7 @@
       .collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-right
           li
-            a.pointer click="displayModal 'challenge'"
+            link-to "challengers.new"
               span.navlink take the challenge
 
 #application-body

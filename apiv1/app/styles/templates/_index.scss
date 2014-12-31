@@ -16,33 +16,13 @@
 }
 
 #hero {
-  .hero-splash::before {
-    background: {
-      image: url("images/amagami.jpg");
-      repeat: no-repeat;
-      size: cover;
-    }
-    @include filter(brightness(25%) grayscale(0.25));
-    @include opacity(0.9);
-    min-height: 975px;
-    position: absolute;
-    top: 0;
-    display: block;
-    width: 100%;
-    content: " ";
-  }
   .hero-splash {
-    color: #ccc;
-    min-height: 975px;
-    position: relative;
-    @include display-flex;
-    @include flex-direction(column);
-    @include justify-content(center);
     font-family: 'Happy Monkey', cursive;
+    color: #ccc;
   }
   .site-title {
     text-align: center;
-    font-size: 6rem;
+    font-size: 5.5rem;
   }
   .site-version {
     text-align: center;

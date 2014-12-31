@@ -36,14 +36,29 @@ ChallengersNewController = Ember.Controller.extend
 
   isGirl: computed "model.sex", ->
     @get("model.sex") is "girl"
-    
+
+  hasSex: computed "s", ->
+    @get("s") is "boy" or @get("s") is "girl"
+
   characterPic: computed "model.character", ->
     return if Ember.isBlank @get 'model.character'
     "assets/images/#{@get 'model.character'}.png"
 
   manageSex: observed "s", ->
-    return unless @get("s") is "boy" or @get("s") is "girl"
     return if Ember.isBlank @get "model"
     @set "model.sex", @get("s")
+
+  successfulSave: ->
+    @swapOutForm()
+    @notifySuccess()
+  swapOutForm: ->
+    $(".form-for").hide "highlight", {}, 450, => @alreadySubmitted = true
+  failedSave: (reason) ->
+    @failureReason =  reason.responseJSON if reason.responseJSON
+
+  actions:
+    formSubmitted: ->
+      @failureReason = null
+      @model.save().then(_.bind @successfulSave, @).catch(_.bind @failedSave, @)
 
 `export default ChallengersNewController`

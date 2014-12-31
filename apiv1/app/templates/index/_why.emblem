@@ -4,5 +4,6 @@
     .explanation= currentReason
   .col-xs-12
     .take-the-challenge
-      button.ghost-btn click="displayModal 'challenge'"
-        span accept the challenge
+      link-to "challengers.new" class="ghost-btn"
+        span.spacebar accept
+        span.hidden-xs the challenge

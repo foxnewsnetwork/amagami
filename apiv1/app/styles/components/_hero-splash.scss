@@ -1,0 +1,67 @@
+.hero-splash {
+  .major-splash::before {
+    background: {
+      image: url("images/amagami.jpg");
+      repeat: no-repeat;
+      size: cover;
+    }
+    @include filter(brightness(25%) grayscale(0.25));
+    @include opacity(0.9);
+    min-height: 975px;
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    content: " ";
+  }
+  .major-splash {
+    min-height: 975px;
+    position: relative;
+    @include display-flex;
+    @include flex-direction(column);
+    @include justify-content(center);
+  }
+  .minor-splash {
+    min-height: 960px;
+    position: relative;
+    @include display-flex;
+    @include flex-direction(column);
+    @include justify-content(center);
+  }
+  .splash-girls {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+  }
+  @mixin splash-girl($image) { 
+    background: {
+      image: url("images/" + $image);
+      repeat: no-repeat;
+      size: cover;
+      position: center center;
+    }
+    @include filter(brightness(25%) grayscale(0.25));
+    @include opacity(0.9);
+    height: 160px;
+    width: 100%;
+  }
+  .rihoko {
+    @include splash-girl("rihoko.png");
+  }
+  .tsukasa {
+    @include splash-girl("tsukasa.jpg");
+  }
+  .sae {
+    @include splash-girl("sae.png");
+  }
+  .kaoru {
+    @include splash-girl("kaoru.jpg");
+  }
+  .haruka {
+    @include splash-girl("haruka.jpg");
+  }
+  .ai {
+    @include splash-girl("ai.png");
+  }
+}

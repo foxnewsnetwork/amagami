@@ -1,6 +1,6 @@
 #templates-index
   #hero
-    .hero-splash
+    hero-splash
       .container
         == partial "index/hero"
 
@@ -9,7 +9,9 @@
       == partial "index/goal"
 
   #penalty
-    .fluid-container
+    .fluid-container.hidden-sm.hidden-xs
+      == partial "index/penalty"
+    .container.hidden-md.hidden-lg
       == partial "index/penalty"
 
   #why
