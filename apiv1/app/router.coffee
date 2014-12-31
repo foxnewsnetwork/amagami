@@ -7,8 +7,6 @@ Router = Ember.Router.extend
 Router.map ->
   @resource "challengers", path: "/challengers", ->
     @route "new"
-  @resource "amagami", path: "/amagami/:name", ->
-    @route "about"
 
 
 `export default Router`
