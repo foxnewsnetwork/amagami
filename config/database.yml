@@ -50,5 +50,4 @@ test:
 production:
   <<: *default
   database: amagami_production
-  username: amagami
   password: <%= ENV['APIV1_DATABASE_PASSWORD'] %>
