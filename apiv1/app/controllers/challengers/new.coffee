@@ -49,16 +49,16 @@ ChallengersNewController = Ember.Controller.extend
     @set "model.sex", @get("s")
 
   successfulSave: ->
-    @swapOutForm()
-    @notifySuccess()
-  swapOutForm: ->
-    $(".form-for").hide "highlight", {}, 450, => @alreadySubmitted = true
+    $(".form-for").hide 450, => @set "alreadySubmitted", true
+    
   failedSave: (reason) ->
-    @failureReason =  reason.responseJSON if reason.responseJSON
+    alert "sorry, the server is broken"
+    console.log reason
+    @set "failureReason", reason.responseJSON if reason.responseJSON
 
   actions:
     formSubmitted: ->
-      @failureReason = null
+      @set "failureReason", null
       @model.save().then(_.bind @successfulSave, @).catch(_.bind @failedSave, @)
 
 `export default ChallengersNewController`
