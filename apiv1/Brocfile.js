@@ -3,7 +3,10 @@
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp({
-  wrapInEval: false
+  wrapInEval: false,
+  fingerprint: {
+    extensions: ["js", "css"]
+  }
 });
 
 // Use `app.import` to add additional libraries to the generated
