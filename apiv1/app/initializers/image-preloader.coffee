@@ -2,16 +2,16 @@
 `import Ember from 'ember'`
 
 ImagesToPreload = [
-  "assets/images/ai.png",
+  "assets/images/ai.jpg",
   "assets/images/haruka.jpg",
   "assets/images/kaoru.jpg",
-  "assets/images/rihoko.png",
-  "assets/images/sae.png",
+  "assets/images/rihoko.jpg",
+  "assets/images/sae.jpg",
   "assets/images/tsukasa.jpg",
   "assets/images/amagami.jpg", 
   "assets/images/bench.jpg", 
-  "assets/images/words2.png", 
-  "assets/images/words.png"
+  "assets/images/vanilla.jpg",
+  "assets/images/words2.jpg"
 ]
 
 computed = ->

@@ -1,16 +1,12 @@
 .row
   .col-lg-12
     .row
-      .col-xs-1.col-sm-2.col-md-2.col-lg-2
-        a.toggle-version.align-right click="toggleVersion 'left'"
+      .col-xs-12
+        a.toggle-version.absolute-left click="toggleVersion 'left'"
           i.fa.fa-caret-left
-
-      .col-xs-10.col-sm-8.col-md-8.col-lg-8
         h1.site-title
           span Amagami Challenge
-      
-      .col-xs-1.col-sm-2.col-md-2.col-lg-2      
-        a.toggle-version.align-left click="toggleVersion 'right'"
+        a.toggle-version.absolute-right click="toggleVersion 'right'"
           i.fa.fa-caret-right
 
     h4.site-version

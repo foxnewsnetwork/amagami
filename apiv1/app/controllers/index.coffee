@@ -46,9 +46,10 @@ IndexController = Ember.Controller.extend
   isAi: ctd "v", -> @get("v") is "ai"
   isSae: ctd "v", -> @get("v") is "sae"
   isHaruka: ctd "v", -> @get("v") is "haruka"
+  isVanilla: ctd "v", -> Ember.isBlank @get "v"
   goalPic: ctd "v", ->
-    return "assets/images/vanilla.png" if Ember.isBlank @get "v"
-    "assets/images/#{@get 'v'}.png"
+    return "assets/images/vanilla.jpg" if Ember.isBlank @get "v"
+    "assets/images/#{@get 'v'}.jpg"
 
   currentReason: ctd "time", ->
     i = _.bind(@incrementTime, @)

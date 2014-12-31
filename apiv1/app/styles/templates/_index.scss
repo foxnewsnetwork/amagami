@@ -3,7 +3,6 @@
     cursor: pointer;
     color: #ccc;
     font-size: 6rem;
-    width: 100%;
     display: block;
     @include opacity(0);
     @include transition-property(opacity);
@@ -16,6 +15,24 @@
 }
 
 #hero {
+  .absolute-right {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    top: 0;
+    min-width: 100px;
+    width: 25%;
+    text-align: center;
+  }
+  .absolute-left {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    min-width: 100px;
+    width: 25%;
+    text-align: center;
+  }
   .hero-splash {
     font-family: 'Happy Monkey', cursive;
     color: #ccc;
@@ -104,7 +121,7 @@
 #why {
   &::before {
     background: {
-      image: url("images/words2.png");
+      image: url("images/words2.jpg");
       repeat: no-repeat;
       position: center center;
       size: cover;

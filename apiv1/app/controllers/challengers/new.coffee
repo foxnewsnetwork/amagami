@@ -42,7 +42,7 @@ ChallengersNewController = Ember.Controller.extend
 
   characterPic: computed "model.character", ->
     return if Ember.isBlank @get 'model.character'
-    "assets/images/#{@get 'model.character'}.png"
+    "assets/images/#{@get 'model.character'}.jpg"
 
   manageSex: observed "s", ->
     return if Ember.isBlank @get "model"

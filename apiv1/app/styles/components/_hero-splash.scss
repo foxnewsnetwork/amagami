@@ -47,13 +47,13 @@
     width: 100%;
   }
   .rihoko {
-    @include splash-girl("rihoko.png");
+    @include splash-girl("rihoko.jpg");
   }
   .tsukasa {
     @include splash-girl("tsukasa.jpg");
   }
   .sae {
-    @include splash-girl("sae.png");
+    @include splash-girl("sae.jpg");
   }
   .kaoru {
     @include splash-girl("kaoru.jpg");
@@ -62,6 +62,6 @@
     @include splash-girl("haruka.jpg");
   }
   .ai {
-    @include splash-girl("ai.png");
+    @include splash-girl("ai.jpg");
   }
 }
