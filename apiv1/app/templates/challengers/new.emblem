@@ -76,7 +76,7 @@
               .form-group.input-section attr-name="workouts"
                 label.form-label
                   span.capitalize.white what sports / workouts / physical activities do you enjoy doing?
-                input.paper value=model.hobbies type="text" placeholder="swimming, dancing, crossfit, starting strength"
+                == input class="paper" value=model.hobbies type="text" placeholder="swimming, dancing, crossfit, starting strength"
             if isKaoru
               .form-group
                 label.form-label
@@ -87,23 +87,23 @@
                 label.form-label
                   span.capitalize.white describe some projects you'd like to work on
                   span.parantheses.white separate projects by commas
-                input.paper value=model.projects type="text" placeholder="build an Amagami Challenge website to help anons complete the amagami challenge"
+                == input class="paper" value=model.projects type="text" placeholder="build an Amagami Challenge website to help anons complete the amagami challenge"
               .form-group.input-section attr-name="skills"
                 label.form-label
                   span.capitalize.white what skills do you have?
                   span.parantheses.white separate skills by commas
-                input.paper value=model.skills type="text" placeholder="photoshop, javascript, installing hardwood flooring"
+                == input class="paper" value=model.skills type="text" placeholder="photoshop, javascript, installing hardwood flooring"
             if isSae
               .form-group.input-section attr-name="books"
                 label.form-label
                   span.capitalize.white what are some of your favorite books?
                   span.parantheses.white separate titles by commas
-                input.paper value=model.books type="text" placeholder="Twilight, 50 Shades of Gray"
+                == input class="paper" value=model.books type="text" placeholder="Twilight, 50 Shades of Gray"
               .form-group.input-section attr-name="genres"
                 label.form-label
                   span.capitalize.white what genres do you like?
                   span.parantheses.white separate genres by commas
-                input.paper value=model.genres type="text" placeholder="Painstaking erotica, dull romance"
+                == input class="paper" value=model.genres type="text" placeholder="Painstaking erotica, dull romance"
         if model.character
           .row
             .col-xs-12.col-sm-12.col-md-6.col-lg-4.location-specifics-section
@@ -112,12 +112,12 @@
                 label.form-label
                   span.capitalize.white email
                   span.parantheses.white in case someone for you also registers
-                input.paper value=model.email type="email" placeholder="foxnewsnetwork@gmail.com"
+                == input name="email" value=model.email type="email" placeholder="foxnewsnetwork@gmail.com" class="paper"
               .form-group.input-section attr-name="location"
                 label.form-label
                   span.capitalize.white address
                   span.parantheses.white so we match you with people you can conveniently meet in real life
-                input.paper value=model.address type="text" placeholder="Santa Monica, California"
+                == input class="paper" value=model.address type="text" placeholder="Santa Monica, California"
             .col-xs-12.col-sm-12.col-md-6.col-lg-8.location-specifics-section
               h4.section-explanation *marking where you are on the map isn't implemented yet
               regional-map zoom=14

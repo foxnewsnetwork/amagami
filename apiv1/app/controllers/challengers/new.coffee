@@ -57,8 +57,10 @@ ChallengersNewController = Ember.Controller.extend
     @set "failureReason", reason.responseJSON if reason.responseJSON
 
   actions:
-    formSubmitted: ->
+    formSubmitted: (m)->
       @set "failureReason", null
-      @model.save().then(_.bind @successfulSave, @).catch(_.bind @failedSave, @)
+      window.m1 = m
+      window.m2 = @get "model"
+      # @model.save().then(_.bind @successfulSave, @).catch(_.bind @failedSave, @)
 
 `export default ChallengersNewController`
