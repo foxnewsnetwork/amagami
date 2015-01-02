@@ -2,10 +2,10 @@
   position: fixed;
   top: 0px;
   width: 100%;
-  z-index: 1;
+  z-index: 1001;
   .navbar-logo {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1.7rem;
+    font-weight: 100;
   }
   .navbar {
     margin-bottom: 0;
@@ -20,9 +20,9 @@
     @include transition-timing-function(ease-in);
   }
   .sticky-naved {
-    background-color: #eee;
+    background-color: #FFF;
     color: #333;
     border-bottom: 1px solid fade-out(#222, 0.9);
-    @include box-shadow(fade-out(#000, 0.4) 0px 5px 8px);
+    @include box-shadow(fade-out(#000, 0.1) 0px 5px 8px);
   }
 }
