@@ -14,7 +14,7 @@
     .container.hidden-md.hidden-lg
       == partial "index/penalty"
 
-  #why
+  #why class=canCSS3Filter::fallback
     .container
       == partial "index/why"
 

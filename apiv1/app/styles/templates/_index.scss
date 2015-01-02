@@ -119,7 +119,10 @@
 }
 
 #why {
-  &::before {
+  background: #000;
+  &:not(.fallback)::before {
+    @include filter(brightness(0.55) saturate(0.35));
+    @include opacity(0.9);
     background: {
       image: url("images/words2.jpg");
       repeat: no-repeat;
@@ -132,8 +135,21 @@
     width: 100%;
     min-height: 650px;
     content: " ";
-    @include filter(brightness(0.55) saturate(0.35));
-    @include opacity(0.9);
+  }
+  &.fallback::before {
+    @include opacity(0.25);
+    background: {
+      image: url("images/words2.jpg");
+      repeat: no-repeat;
+      position: center center;
+      size: cover;
+    }
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    min-height: 650px;
+    content: " ";
   }
   position: relative;
   font-family: 'Muli', sans-serif;
@@ -156,39 +172,30 @@
     text-align: center;
   }
   .ghost-btn {
+    @include border-radius(5px);
+    @include background-clip(padding-box);
+    @include transition-property(all);
+    @include transition-duration(200ms);
+    @include transition-timing-function(ease-in);
+    @include box-sizing(content-box);
+    @include backface-visibility(hidden);
     display: inline-block;
     text-decoration: none;
     border: 4px solid #5cb85c;
     height: 48px;
     line-height: 48px;
     color: #5cb85c;
-    -webkit-border-radius: 5px;
-    -webkit-background-clip: padding-box;
-    -moz-border-radius: 5px;
-    -moz-background-clip: padding;
-    border-radius: 5px;
-    background-clip: padding-box;
     font-size: 2em;
     font-weight: bold;
     padding: .5em 1.5em;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
     background: fade-out(#fff, 1);
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
     cursor: pointer;
     zoom: 1;
-    -webkit-backface-visibility: hidden;
     position: relative;
   }
   .ghost-btn:hover {
-    -webkit-transition: 0.2s ease;
-    -moz-transition: 0.2s ease;
-    -o-transition: 0.2s ease;
-    transition: 0.2s ease;
+    @include transition-duration(200ms);
+    @include transition-timing-function(ease-in);
     background-color: #5cb85c;
     color: #ffffff;
   }

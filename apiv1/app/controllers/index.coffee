@@ -51,6 +51,9 @@ IndexController = Ember.Controller.extend
     return "assets/images/vanilla.jpg" if Ember.isBlank @get "v"
     "assets/images/#{@get 'v'}.jpg"
 
+  canCSS3Filter: ctd "browserChecker.canCSS3Filter", ->
+    @get("browserChecker.canCSS3Filter")
+
   currentReason: ctd "time", ->
     i = _.bind(@incrementTime, @)
     _.delay i, 10000
