@@ -1,9 +1,13 @@
 .hero-splash {
+  background: #111;
   .major-splash::before {
     background: {
       image: url("images/amagami.jpg");
       repeat: no-repeat;
       size: cover;
+    }
+    &.fallback {
+      @include opacity(0.15);
     }
     @include filter(brightness(25%) grayscale(0.25));
     @include opacity(0.9);
@@ -22,7 +26,7 @@
     @include justify-content(center);
   }
   .minor-splash {
-    min-height: 960px;
+    min-height: 1020px;
     position: relative;
     @include display-flex;
     @include flex-direction(column);
@@ -41,9 +45,14 @@
       size: cover;
       position: center center;
     }
-    @include filter(brightness(25%) grayscale(0.25));
-    @include opacity(0.9);
-    height: 160px;
+    @include filter(brightness(25%) grayscale(0.35));
+    &:not(.fallback) {
+      @include opacity(0.5);
+    }
+    &.fallback {
+      @include opacity(0.025);
+    }
+    height: 170px;
     width: 100%;
   }
   .rihoko {

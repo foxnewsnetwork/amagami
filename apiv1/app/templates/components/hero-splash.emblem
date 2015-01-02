@@ -1,5 +1,5 @@
 .hidden-md.hidden-lg
-  .splash-girls
+  .splash-girls class=canCSS3Filter::fallback
     .rihoko
     .tsukasa
     .sae
@@ -10,5 +10,5 @@
     == yield
 
 .hidden-xs.hidden-sm
-  .major-splash
+  .major-splash class=canCSS3Filter::fallback
     == yield
