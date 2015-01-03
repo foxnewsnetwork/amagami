@@ -109,9 +109,9 @@
   }
   .bench-pic {
     width: 100px;
-    height: 90px;
+    height: 100px;
     margin-right: 15px;
-    @include box-shadow(fade-out(#fff, 0.4) 0px 0px 8px);
+	margin-top: 10px;
   }
   .pics {
     text-align: justify;
