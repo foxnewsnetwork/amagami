@@ -9,7 +9,7 @@
   }
   .navbar {
     margin-bottom: 0;
-	@include border-radius(0);
+    @include border-radius(0);
   }
   .navbar-inverse {
     background: {
@@ -19,9 +19,9 @@
     @include transition-property(background-color);
     @include transition-duration(200ms);
     @include transition-timing-function(ease-in);
-	.navbar-brand:focus, .navbar-brand:hover, .navbar-nav>li>a:focus, .navbar-nav>li>a:hover {
-	  color: #DDD;
-	}
+    .navbar-brand:focus, .navbar-brand:hover, .navbar-nav>li>a:focus, .navbar-nav>li>a:hover {
+      color: #DDD;
+    }
   }
   .sticky-naved {
     background-color: #FFF;
