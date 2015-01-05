@@ -34,7 +34,7 @@
     text-align: center;
   }
   .hero-splash {
-    font-family: 'Happy Monkey', cursive;
+    font-family: Muli, sans-serif;
     color: #ccc;
   }
   .site-title {
@@ -48,12 +48,15 @@
   .section-title {
     text-transform: capitalize;
     font-size: 4rem;
-    color: #ccc;
+    color: #DDD;
     .fa-caret-down {
       @include opacity(0);
       @include transition-property(opacity);
       @include transition-duration(200ms);
       @include transition-timing-function(ease-in);
+    }
+    a:focus, a:hover {
+      text-decoration: none;
     }
     &:hover {
       .fa-caret-down {
