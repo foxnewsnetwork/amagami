@@ -1,0 +1,19 @@
+@import "settings";
+@import 'foundation';
+@include foundation-everything;
+@import url(http://fonts.googleapis.com/css?family=Happy+Monkey);
+@import url(http://fonts.googleapis.com/css?family=Muli);
+
+html, body {
+  background: #333;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#application-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 950px;
+  width: 100%;
+}

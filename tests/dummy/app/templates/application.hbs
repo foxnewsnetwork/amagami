@@ -1,0 +1,18 @@
+<div id='application-header'>
+  {{amagami-nav}}
+</div>
+<div id='application-body'>
+  <div class='application-container'>
+    {{liquid-outlet}}
+  </div>
+
+  <div class='application-footer'>
+    {{#amagami-footer as |sections|}}
+      {{#if sections.isLinks}}
+        <a class='github-link' href='https://github.com/foxnewsnetwork/amagami'>
+          <span>Github</span>
+        </a>
+      {{/if}}
+    {{/amagami-footer}}
+  </div>
+</div>

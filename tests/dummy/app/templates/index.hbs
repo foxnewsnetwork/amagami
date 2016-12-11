@@ -1,0 +1,55 @@
+{{#amagami-hero as |hero sections|}}
+  {{#if sections.isTitle}}
+    {{hero.title title='Amagami Challenge' subtitle='sae v. 2017'}}
+  {{else if sections.isDetails}}
+    {{#hero.bullet-title}}The Goal{{/hero.bullet-title}}
+    {{#hero.bullet-details}}Find a girlfriend by date{{/hero.bullet-details}}
+    {{#hero.bullet-title}}The Penalty{{/hero.bullet-title}}
+    {{#hero.bullet-details}}Site on a bench and weep{{/hero.bullet-details}}
+  {{/if}}
+{{/amagami-hero}}
+
+{{#amagami-bullet-image-slide as |slide sections|}}
+  {{#if sections.isText}}
+    {{#slide.title}}Goal Details - Sae{{/slide.title}}
+  {{else if sections.isBullets}}
+    {{#slide.bullet}}something: whatever{{/slide.bullet}}
+  {{else if sections.isImage}}
+    {{slide.image src='images/sae.jpg'}}
+  {{/if}}
+{{/amagami-bullet-image-slide}}
+
+{{#amagami-duality-slide as |slide sections|}}
+  {{#if sections.isLeft}}
+    {{#slide.image src='images/whatever.jpg'}}
+  {{else}}
+    {{#slide.paragraph}}
+      Penalty Detail
+      Stuff goes here
+    {{/slide.paragraph}}
+  {{/if}}
+{{/amagami-duality-slide}}
+
+{{#amagami-call-to-action as |cta sections|}}
+  {{#if sections.isPrompt}}
+    {{#cta.title}}Why?{{/cta.title}}
+  {{else if sections.isTagline}}
+    {{#cta.text}}Some text here{{/cta.text}}
+  {{else}}
+    {{#cta.button}}
+      Accept the Challenge
+    {{/cta.button}}
+  {{/if}}
+{{/amagami-call-to-action}}
+
+{{#amagami-double-text-slide as |slide sections|}}
+  {{#if sections.isLeft}}
+    {{#slide.title}}Conditions{{/slide.title}}
+
+    {{#slide.bullet}}If you whatever{{/slide.bullet}}
+  {{else}}
+    {{#slide.title}}Conditions{{/slide.title}}
+
+    {{#slide.bullet}}If you whatever{{/slide.bullet}}
+  {{/if}}
+{{/amagami-double-text-slide}}

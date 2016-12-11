@@ -1,0 +1,1 @@
+export { default } from 'amagami-challenge/components/amagami-call-to-action';
