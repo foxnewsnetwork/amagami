@@ -18,6 +18,7 @@
     "test": "ember try:each"
   },
   "dependencies": {
+    "ember-cli-htmlbars": "^1.0.10",
     "ember-cli-babel": "^5.1.7"
   },
   "devDependencies": {
@@ -30,7 +31,6 @@
     "ember-cli-autoprefixer": "0.6.0",
     "ember-cli-dependency-checker": "^1.3.0",
     "ember-cli-foundation-6-sass": "0.0.14",
-    "ember-cli-htmlbars": "^1.0.10",
     "ember-cli-htmlbars-inline-precompile": "^0.3.3",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-jshint": "^2.0.1",
@@ -45,10 +45,10 @@
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
-    "ember-welcome-page": "^1.0.3",
     "flexi": "1.2.0",
     "liquid-fire": "0.27.0",
-    "loader.js": "^4.0.10"
+    "loader.js": "^4.0.10",
+    "normalize-scss": "^6.0.0"
   },
   "engines": {
     "node": ">= 0.12.0"
