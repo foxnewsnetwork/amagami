@@ -1,11 +1,18 @@
-{{#amagami-hero as |hero sections|}}
+{{#amagami-hero as |sections|}}
   {{#if sections.isTitle}}
-    {{hero.title title='Amagami Challenge' subtitle='sae v. 2017'}}
+    <h1 class='amagami-hero__main-title'>Amagami Challenge</h1>
+    <h2 class='amagami-hero__subtitle'>sae v. 2017</h2>
   {{else if sections.isDetails}}
-    {{#hero.bullet-title}}The Goal{{/hero.bullet-title}}
-    {{#hero.bullet-details}}Find a girlfriend by date{{/hero.bullet-details}}
-    {{#hero.bullet-title}}The Penalty{{/hero.bullet-title}}
-    {{#hero.bullet-details}}Site on a bench and weep{{/hero.bullet-details}}
+    <h4 class='amagami-hero__bullet-title'>The Goal</h4>
+    <p class='amagami-hero__bullet-detail'>Find a girlfriend by date</p>
+    <h4 class='amagami-hero__bullet-title'>The Penalty</h4>
+    <p class='amagami-hero__bullet-detail'>Sit on bench and die</p>
+    <h4 class='amagami-hero__bullet-title'>Why take the challenge</h4>
+    <p class='amagami-hero__bullet-detail'>seiren 2017</p>
+    <h4 class='amagami-hero__bullet-title'>Conditions</h4>
+    <p class='amagami-hero__bullet-detail'>get a 3dpd gf</p>
+    <h4 class='amagami-hero__bullet-title'>Resources</h4>
+    <p class='amagami-hero__bullet-detail'>Some links here</p>
   {{/if}}
 {{/amagami-hero}}
 

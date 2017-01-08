@@ -1,1 +1,10 @@
-{{yield}}
+<div class='amagami-hero__overlay'>
+  <div class='amagami-hero__inner-container row'>
+    <div class='amagami-hero__title-section large-12'>
+      {{yield (hash isTitle=true)}}
+    </div>
+    <div class='amagami-hero__detail-section large-12'>
+      {{yield (hash isDetails=true)}}
+    </div>
+  </div>
+</div>

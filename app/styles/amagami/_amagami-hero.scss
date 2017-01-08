@@ -1,0 +1,48 @@
+.amagami-hero.container-lg {
+  min-height: 100vh;
+  background: {
+    image: url('images/amagami.jpg');
+    size: cover;
+    position: center top;
+  }
+}
+
+.amagami-hero__overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: {
+    color: fade-out(#000, 0.4);
+  }
+}
+
+.amagami-hero__inner-container {
+  min-width: 65rem;
+}
+
+.amagami-hero__title-section {
+  text-align: center;
+}
+
+.amagami-hero__main-title,
+.amagami-hero__subtitle,
+.amagami-hero__bullet-title,
+.amagami-hero__bullet-detail {
+  font-family: Muli, sans-serif;
+  color: #ccc;
+}
+
+.amagami-hero__subtitle {
+  font-size: 1.5rem;
+}
+
+.amagami-hero__detail-section {
+  text-align: left;
+}
+.amagami-hero__bullet-title {
+
+}
+.amagami-hero__bullet-detail {
+}
