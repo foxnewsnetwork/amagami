@@ -16,13 +16,23 @@
   {{/if}}
 {{/amagami-hero}}
 
-{{#amagami-bullet-image-slide as |slide sections|}}
-  {{#if sections.isText}}
-    {{#slide.title}}Goal Details - Sae{{/slide.title}}
-  {{else if sections.isBullets}}
-    {{#slide.bullet}}something: whatever{{/slide.bullet}}
+{{#amagami-bullet-image-slide as |sections|}}
+  {{#if sections.isTitle}}
+    <h3 class='amagami-bullet-image-slide__header'>Goal Details</h3>
+  {{else if sections.isText}}
+    <ul class='amagami-bullet-image-slide__list'>
+      <li class='amagami-bullet-image-slide__list-member'>
+        something: whatever
+      </li>
+      <li class='amagami-bullet-image-slide__list-member'>
+        something: whatever
+      </li>
+      <li class='amagami-bullet-image-slide__list-member'>
+        something: whatever
+      </li>
+    </ul>
   {{else if sections.isImage}}
-    {{slide.image src='images/sae.jpg'}}
+    <img class='amagami-bullet-image-slide__image' src='assets/images/sae.jpg'>
   {{/if}}
 {{/amagami-bullet-image-slide}}
 
