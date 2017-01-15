@@ -1,0 +1,59 @@
+.amagami-small-hero.container-lg {
+  height: 35rem;
+  width: 100%;
+  background: {
+    image: url('images/words2.png');
+    size: cover;
+    position: center center;
+  }
+}
+
+.amagami-small-hero__overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 35rem;
+  background: {
+    color: fade-out(#000, 0.4);
+  }
+}
+
+.amagami-small-hero__main-title,
+.amagami-small-hero__subtitle,
+.amagami-small-hero__bullet-title,
+.amagami-small-hero__bullet-detail {
+  font-family: 'Happy Monkey', cursive;
+  color: #ccc;
+}
+
+.amagami-small-hero__main-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.amagami-small-hero__subtitle {
+  font-size: 1.5rem;
+}
+
+.amagami-small-hero__cta-ghost-btn {
+  display: inline-block;
+  border-radius: 5px;
+  width: 18rem;
+  padding: 1rem;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  &:hover {
+    background-color: fade-out(#fff, 0.2);
+    color: #000;
+  }
+}
+
+.amagami-small-hero__cta-section {
+  text-align: center;
+  margin-top: 2rem;
+}

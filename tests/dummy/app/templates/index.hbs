@@ -56,17 +56,17 @@
   {{/if}}
 {{/amagami-left-image-slide}}
 
-{{#amagami-call-to-action as |cta sections|}}
-  {{#if sections.isPrompt}}
-    {{#cta.title}}Why?{{/cta.title}}
-  {{else if sections.isTagline}}
-    {{#cta.text}}Some text here{{/cta.text}}
-  {{else}}
-    {{#cta.button}}
+{{#amagami-small-hero as |sections|}}
+  {{#if sections.isTitle}}
+    <h1 class='amagami-small-hero__main-title'>Why?</h1>
+    <h2 class='amagami-small-hero__subtitle'>To discover a better part of yourself</h2>
+  {{else if sections.isCTA}}
+    <button class='amagami-small-hero__cta-ghost-btn'>
       Accept the Challenge
-    {{/cta.button}}
+    </button>
   {{/if}}
-{{/amagami-call-to-action}}
+{{/amagami-small-hero}}
+
 
 {{#amagami-double-text-slide as |slide sections|}}
   {{#if sections.isLeft}}
