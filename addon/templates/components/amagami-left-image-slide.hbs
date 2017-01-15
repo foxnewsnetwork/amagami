@@ -1,0 +1,16 @@
+<div class='amagami-left-image-slide__left-ctn'>
+  <div class='amagami-left-image-slide__image-section'>
+    {{yield (hash isImage=true)}}
+  </div>
+</div>
+
+<div class='amagami-left-image-slide__right-ctn'>
+  <div class='amagami-left-image-slide__flush-left'>
+    <div class='amagami-left-image-slide__title-section'>
+      {{yield (hash isTitle=true)}}
+    </div>
+    <div class='amagami-left-image-slide__text-section'>
+      {{yield (hash isText=true)}}
+    </div>
+  </div>
+</div>

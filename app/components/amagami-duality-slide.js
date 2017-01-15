@@ -1,1 +1,0 @@
-export { default } from 'amagami-challenge/components/amagami-duality-slide';

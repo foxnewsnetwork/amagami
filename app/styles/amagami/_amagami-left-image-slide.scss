@@ -1,0 +1,27 @@
+.amagami-left-image-slide.container-lg {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.amagami-left-image-slide__right-ctn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding-left: 5rem;
+}
+
+.amagami-left-image-slide__flush-left {
+  padding-left: 3rem;
+  color: #ccc;
+}
+
+.amagami-left-image-slide__image-section {
+
+}
+
+.amagami-left-image-slide__left-ctn {
+  width: 50%;
+}

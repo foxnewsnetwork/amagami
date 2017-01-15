@@ -16,36 +16,45 @@
   {{/if}}
 {{/amagami-hero}}
 
-{{#amagami-bullet-image-slide as |sections|}}
+{{#amagami-right-image-slide as |sections|}}
   {{#if sections.isTitle}}
-    <h3 class='amagami-bullet-image-slide__header'>Goal Details</h3>
+    <h3 class='amagami-right-image-slide__header'>Goal Details</h3>
   {{else if sections.isText}}
-    <ul class='amagami-bullet-image-slide__list'>
-      <li class='amagami-bullet-image-slide__list-member'>
+    <ul class='amagami-right-image-slide__list'>
+      <li class='amagami-right-image-slide__list-member'>
         something: whatever
       </li>
-      <li class='amagami-bullet-image-slide__list-member'>
+      <li class='amagami-right-image-slide__list-member'>
         something: whatever
       </li>
-      <li class='amagami-bullet-image-slide__list-member'>
+      <li class='amagami-right-image-slide__list-member'>
         something: whatever
       </li>
     </ul>
   {{else if sections.isImage}}
-    <img class='amagami-bullet-image-slide__image' src='assets/images/sae.jpg'>
+    <img class='amagami-right-image-slide__image' src='assets/images/sae.jpg'>
   {{/if}}
-{{/amagami-bullet-image-slide}}
+{{/amagami-right-image-slide}}
 
-{{#amagami-duality-slide as |slide sections|}}
-  {{#if sections.isLeft}}
-    {{slide.image src='images/whatever.jpg'}}
-  {{else}}
-    {{#slide.paragraph}}
-      Penalty Detail
-      Stuff goes here
-    {{/slide.paragraph}}
+{{#amagami-left-image-slide as |sections|}}
+  {{#if sections.isTitle}}
+    <h3 class='amagami-left-image-slide__header'>Penalty Details</h3>
+  {{else if sections.isText}}
+    <ul class='amagami-left-image-slide__list'>
+      <li class='amagami-left-image-slide__list-member'>
+        something: whatever
+      </li>
+      <li class='amagami-left-image-slide__list-member'>
+        something: whatever
+      </li>
+      <li class='amagami-left-image-slide__list-member'>
+        something: whatever
+      </li>
+    </ul>
+  {{else if sections.isImage}}
+    <img class='amagami-left-image-slide__image' src='assets/images/ai.jpg'>
   {{/if}}
-{{/amagami-duality-slide}}
+{{/amagami-left-image-slide}}
 
 {{#amagami-call-to-action as |cta sections|}}
   {{#if sections.isPrompt}}

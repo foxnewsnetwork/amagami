@@ -1,11 +1,11 @@
-.amagami-bullet-image-slide.container-lg {
+.amagami-right-image-slide.container-lg {
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: flex-end;
 }
 
-.amagami-bullet-image-slide__left-ctn {
+.amagami-right-image-slide__left-ctn {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,15 +13,15 @@
   padding-left: 5rem;
 }
 
-.amagami-bullet-image-slide__flush-right {
+.amagami-right-image-slide__flush-right {
   padding-right: 3rem;
   color: #ccc;
 }
 
-.amagami-bullet-image-slide__image-section {
+.amagami-right-image-slide__image-section {
 
 }
 
-.amagami-bullet-image-slide__right-ctn {
+.amagami-right-image-slide__right-ctn {
   width: 50%;
 }
