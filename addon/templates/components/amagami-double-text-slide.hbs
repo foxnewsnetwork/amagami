@@ -1,1 +1,12 @@
-{{yield}}
+<div class='amagami-double-text-slide__row row'>
+  <div class='amagami-double-text-slide__square-block large-6 columns'>
+    <div class='amagami-double-text-slide__center-block large-6 columns'>
+      {{yield (hash isLeft=true)}}
+    </div>
+  </div>
+  <div class='amagami-double-text-slide__square-block large-6 columns'>
+    <div class='amagami-double-text-slide__center-block large-6 columns'>
+      {{yield (hash isRight=true)}}
+    </div>
+  </div>
+</div>

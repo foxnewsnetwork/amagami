@@ -1,0 +1,27 @@
+.amagami-double-text-slide.container-lg {
+  color: #eee;
+  background-color: #222;
+}
+
+.amagami-double-text-slide__row {
+  width: 100%;
+}
+
+.amagami-double-text-slide__square-block {
+  height: 25rem;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amagami-double-text-slide__header {
+  font-family: 'Happy Monkey', cursive;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.amagami-double-text-slide__list-memeber {
+  font-family: Muli, sans-serif;
+}

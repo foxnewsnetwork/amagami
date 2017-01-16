@@ -68,14 +68,26 @@
 {{/amagami-small-hero}}
 
 
-{{#amagami-double-text-slide as |slide sections|}}
+{{#amagami-double-text-slide as |sections|}}
   {{#if sections.isLeft}}
-    {{#slide.title}}Conditions{{/slide.title}}
-
-    {{#slide.bullet}}If you whatever{{/slide.bullet}}
+    <h2 class='amagami-double-text-slide__header'>Resources</h2>
+    <ul class='amagami-double-text-slide__list'>
+      <li class='amagami-double-text-slide__list-memeber'>
+        Something
+      </li>
+      <li class='amagami-double-text-slide__list-memeber'>
+        Something
+      </li>
+    </ul>
   {{else}}
-    {{#slide.title}}Conditions{{/slide.title}}
-
-    {{#slide.bullet}}If you whatever{{/slide.bullet}}
+    <h2 class='amagami-double-text-slide__header'>Guides</h2>
+    <ul class='amagami-double-text-slide__list'>
+      <li class='amagami-double-text-slide__list-memeber'>
+        Something
+      </li>
+      <li class='amagami-double-text-slide__list-memeber'>
+        Something
+      </li>
+    </ul>
   {{/if}}
 {{/amagami-double-text-slide}}
